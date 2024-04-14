@@ -117,12 +117,10 @@ for match in tches:
     substring_before_word = input_string[:match_position]
     
     # Find the n words before the word (excluding '(')
+    # Find the n words before the word (excluding '(')
     words_before = re.findall(r'\b\w+\b', substring_before_word)[-num_uppercase:]
     if 'of' in words_before:
         words_before = re.findall(r'\b\w+\b', substring_before_word)[-num_uppercase - 1:]
-
-
-
     # Print the result
     print(f"Word {match}")
     print(f"Full form is: {' '.join(words_before)}\n")
