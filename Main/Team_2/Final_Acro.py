@@ -111,6 +111,7 @@ for match in tches:
     num_uppercase = sum(1 for char in match if char.isupper())
 
     # Find the position of the word in the input string
+     # Find the position of the word in the input string
     match_position = input_string.find(match)
 
     # Find the substring before the word
